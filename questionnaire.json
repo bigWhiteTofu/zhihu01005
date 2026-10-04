@@ -1,0 +1,120 @@
+{
+  "title": "阅读体验与评价",
+  "instructions": "请根据刚才看到的回答，选择最符合您感受的一项。",
+  "scale": {
+    "minimum": 1,
+    "maximum": 7,
+    "minimum_label": "完全不同意",
+    "maximum_label": "完全同意"
+  },
+  "items": [
+    {
+      "order": 1,
+      "field": "q01",
+      "wording": "阅读完这个回答，我清楚理解了折纸鹤的关键逻辑与原理。",
+      "required": true
+    },
+    {
+      "order": 2,
+      "field": "q02",
+      "wording": "这个回答有效地消除了我对于“自己做为什么会失败”的疑惑。",
+      "required": true
+    },
+    {
+      "order": 3,
+      "field": "q03",
+      "wording": "结合图片和文字，我对每一个操作步骤都感到心中有数。",
+      "required": true
+    },
+    {
+      "order": 4,
+      "field": "q04",
+      "wording": "我认为这位答主在折纸方面是非常专业的。",
+      "required": true
+    },
+    {
+      "order": 5,
+      "field": "q05",
+      "wording": "我相信这个回答提供的方法是准确无误、经得起验证的。",
+      "required": true
+    },
+    {
+      "order": 6,
+      "field": "q06",
+      "wording": "如果按照这个回答去操作，我有充分的理由相信能正确完成纸鹤的折叠。",
+      "required": true
+    },
+    {
+      "order": 7,
+      "field": "q07",
+      "wording": "我感觉这位答主是真心希望帮助像我这样的新手解决困难，而不仅仅是为了炫耀。",
+      "required": true
+    },
+    {
+      "order": 8,
+      "field": "q08",
+      "wording": "我能感受到答主在分享时是真诚的、充满关怀的。",
+      "required": true
+    },
+    {
+      "order": 9,
+      "field": "q09",
+      "wording": "尽管素未谋面，但我对这位答主产生了一种好感和信任。",
+      "required": true
+    },
+    {
+      "order": 10,
+      "field": "q10",
+      "wording": "回答中的图片画质清晰、构图美观。",
+      "required": true
+    },
+    {
+      "order": 11,
+      "field": "q11",
+      "wording": "该回答提供的信息是非常完整的。",
+      "required": true
+    },
+    {
+      "order": 12,
+      "field": "q12",
+      "wording": "配图让我能看清制作过程中发生的关键操作。",
+      "required": true
+    },
+    {
+      "order": 13,
+      "field": "q13",
+      "wording": "配图提供了制作步骤或中间状态的具体证据。",
+      "required": true
+    },
+    {
+      "order": 14,
+      "field": "q14",
+      "wording": "配图让我感到有具体的人以身体或手部参与了这项实践。",
+      "required": true
+    },
+    {
+      "order": 15,
+      "field": "q15",
+      "wording": "配图把这项实践与人的实际活动情境联系起来。",
+      "required": true
+    },
+    {
+      "order": 16,
+      "field": "q16",
+      "wording": "配图展示了已经制作完成的纸鹤。",
+      "required": true
+    },
+    {
+      "order": 17,
+      "field": "q17",
+      "wording": "图片中的折纸场景看起来真实自然。",
+      "required": true
+    },
+    {
+      "order": 18,
+      "field": "q18",
+      "wording": "配图包含的视觉信息丰富。",
+      "required": true
+    }
+  ]
+}
