@@ -60,7 +60,7 @@
    (async()=>{
      try{
        let session=await current();if(!session)return;document.body.classList.add("session-ready");
-       await Promise.all(Array.from(document.images).map(img=>img.complete&&img.naturalWidth?Promise.resolve():new Promise((resolve,reject)=>{img.addEventListener("load",resolve,{once:true});img.addEventListener("error",()=>reject(new Error("图片未能加载，请刷新后继续。")),{once:true});})));
+       await Promise.all(Array.from(document.images).map(img=>img.complete?(img.naturalWidth?Promise.resolve():Promise.reject(new Error("图片未能加载，请刷新后继续。"))):new Promise((resolve,reject)=>{img.addEventListener("load",resolve,{once:true});img.addEventListener("error",()=>reject(new Error("图片未能加载，请刷新后继续。")),{once:true});})));
        session=await api("reading-start",{});accumulated=session.reading_visible_ms;ready=session.can_answer;next.disabled=!ready;previous=performance.now();wasVisible=!document.hidden;started=!session.can_answer;render();
        if(started){setInterval(()=>{tick();render();},250);setInterval(()=>{if(started)sync().catch(()=>{});},2000);}
      }catch(error){setStatus(error.message);document.getElementById("return-home").hidden=false;}
