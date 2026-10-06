@@ -1,10 +1,11 @@
 "use strict";
 (() => {
  const base=new URL("../",document.currentScript.src),endpoint=window.STUDY_ENDPOINT;
- const key="study3b-session-20261006-threepanel",draftKey="study3b-answers-20261006-threepanel";
+ const studyVersion="origami-pilot-20261006-threepanel-ratio2";
+ const key="study3b-session-20261006-threepanel-ratio2",draftKey="study3b-answers-20261006-threepanel-ratio2";
  const status=document.getElementById("flow-status")||document.getElementById("form-status");
  const setStatus=message=>{if(status)status.textContent=message;const readingError=document.getElementById("reading-error");if(readingError)readingError.textContent=message;};
- const navigate=path=>location.assign(new URL(path,base));
+ const navigate=path=>{const target=new URL(path,base);target.searchParams.set("v","20261006-threepanel-ratio2");location.assign(target);};
  const fields=Array.from({length:18},(_,i)=>"q"+String(i+1).padStart(2,"0"));
  let identity;
  function loadIdentity(){try{return JSON.parse(localStorage.getItem(key)||"null");}catch{return null;}}
@@ -32,7 +33,7 @@
      const button=document.getElementById("start-button");button.disabled=true;setStatus("正在连接，请稍候…");
      try{
        if(!identity)saveIdentity(freshIdentity());
-       const session=await api("start",{...identity,consent:true});navigate(session.completed?"done.html":session.reading_path);
+       const session=await api("start",{...identity,consent:true,study_version:studyVersion});navigate(session.completed?"done.html":session.reading_path);
      }catch(error){setStatus(error.message);button.disabled=false;}
    });return;
  }
