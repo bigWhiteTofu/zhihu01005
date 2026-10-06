@@ -1,7 +1,7 @@
 "use strict";
 (() => {
  const base=new URL("../",document.currentScript.src),endpoint=window.STUDY_ENDPOINT;
- const key="study3b-session-v2",draftKey="study3b-answers-v2";
+ const key="study3b-session-20261006-threepanel",draftKey="study3b-answers-20261006-threepanel";
  const status=document.getElementById("flow-status")||document.getElementById("form-status");
  const setStatus=message=>{if(status)status.textContent=message;const readingError=document.getElementById("reading-error");if(readingError)readingError.textContent=message;};
  const navigate=path=>location.assign(new URL(path,base));

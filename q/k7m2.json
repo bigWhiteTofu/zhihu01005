@@ -79,13 +79,13 @@
     {
       "order": 12,
       "field": "q12",
-      "wording": "配图让我能看清制作过程中发生的关键操作。",
+      "wording": "配图清楚呈现了折纸过程中不同步骤之间的变化。",
       "required": true
     },
     {
       "order": 13,
       "field": "q13",
-      "wording": "配图提供了制作步骤或中间状态的具体证据。",
+      "wording": "从配图中，我能够辨认出折纸步骤的先后顺序。",
       "required": true
     },
     {
