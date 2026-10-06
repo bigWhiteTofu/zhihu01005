@@ -1,11 +1,17 @@
 "use strict";
 (() => {
  const base=new URL("../",document.currentScript.src),endpoint=window.STUDY_ENDPOINT;
- const studyVersion="origami-pilot-20261006-threepanel-ratio2";
- const key="study3b-session-20261006-threepanel-ratio2",draftKey="study3b-answers-20261006-threepanel-ratio2";
+ const studyVersion="origami-pilot-20261006-1006-01";
+ const key="study3b-session-2026-10-06-1006-01",draftKey="study3b-answers-2026-10-06-1006-01";
  const status=document.getElementById("flow-status")||document.getElementById("form-status");
  const setStatus=message=>{if(status)status.textContent=message;const readingError=document.getElementById("reading-error");if(readingError)readingError.textContent=message;};
- const navigate=path=>{const target=new URL(path,base);target.searchParams.set("v","20261006-threepanel-ratio2");location.assign(target);};
+ const supplied=new URLSearchParams(location.search);
+ if((supplied.has("date")&&supplied.get("date")!=="2026-10-06")||(supplied.has("batch")&&supplied.get("batch")!=="1006-01")){
+   setStatus("填写链接的日期或批次不一致，请使用 2026-10-06 / 1006-01 的本次链接。");
+   const start=document.getElementById("start-button");if(start)start.disabled=true;
+   return;
+ }
+ const navigate=path=>{const target=new URL(path,base);target.searchParams.set("v","2026-10-06-1006-01");target.searchParams.set("date","2026-10-06");target.searchParams.set("batch","1006-01");location.assign(target);};
  const fields=Array.from({length:18},(_,i)=>"q"+String(i+1).padStart(2,"0"));
  let identity;
  function loadIdentity(){try{return JSON.parse(localStorage.getItem(key)||"null");}catch{return null;}}

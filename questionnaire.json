@@ -65,25 +65,25 @@
     {
       "order": 10,
       "field": "q10",
-      "wording": "回答中的图片画质清晰、构图美观。",
+      "wording": "回答中的图片整体看起来美观、协调。",
       "required": true
     },
     {
       "order": 11,
       "field": "q11",
-      "wording": "该回答提供的信息是非常完整的。",
+      "wording": "该回答提供的信息总体上是完整的。",
       "required": true
     },
     {
       "order": 12,
       "field": "q12",
-      "wording": "配图清楚呈现了折纸过程中不同步骤之间的变化。",
+      "wording": "配图让我更容易理解折纸过程是如何进行的。",
       "required": true
     },
     {
       "order": 13,
       "field": "q13",
-      "wording": "从配图中，我能够辨认出折纸步骤的先后顺序。",
+      "wording": "配图帮助我把文字中的操作说明与相应的折叠状态联系起来。",
       "required": true
     },
     {
@@ -101,13 +101,13 @@
     {
       "order": 16,
       "field": "q16",
-      "wording": "配图展示了已经制作完成的纸鹤。",
+      "wording": "回答中的配图中可以看到已经完成的纸鹤。",
       "required": true
     },
     {
       "order": 17,
       "field": "q17",
-      "wording": "图片中的折纸场景看起来真实自然。",
+      "wording": "回答中的图片整体看起来像真实的折纸记录。",
       "required": true
     },
     {
@@ -116,5 +116,7 @@
       "wording": "配图包含的视觉信息丰富。",
       "required": true
     }
-  ]
+  ],
+  "batch_date": "2026-10-06",
+  "batch_label": "1006-01"
 }
